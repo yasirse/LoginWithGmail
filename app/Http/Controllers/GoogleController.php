@@ -52,6 +52,7 @@ class GoogleController extends Controller
     }
     public function logout()
     {
+        //Checking user is login in
         $user = Auth::user();
         if (Auth::check())
         {
